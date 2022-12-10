@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .toppane {
+            width: 100%;
+            height: 100px;
+            background-color: #4da6ff;
+        }
+
+        .leftpane {
+            width: 30%;
+            height: 100vh;
+            background-color: rosybrown;
+        }
+
+        .middlepane {
+            width: 40%;
+            height: 100vh;
+            background-color: royalblue;
+        }
+       
+        .rightpane {
+            width: 30%;
+            height: 100vh;
+            background-color: yellow;
+        }
+        .rightpane, .middlepane, .leftpane 
+        {
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+
+        @font-face {
+            font-family: 'digital';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Digital'), url(../fonts/digital-7.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'digital2';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Digital2'), url(../fonts/digital-2.ttf) format('truetype');
+        }
+
+
+        .scores {
+            font-family: 'digital';
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size: 15em;
+            text-shadow: -1px 0 white, 0 5px white, 5px 0 white, 0 -1px white;
+        }
+
+        .name {
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size: 6em;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name_2 {
+            font-family: 'digital';
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size: 2.5em;
+        }
+
+        .name_3 {
+            font-family: 'digital';
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size: 6em;
+        }
+        .name_4{
+            font-family: 'digital';
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size: 11em;  
+        }
+        .timer {
+          
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size: 11.5em;
+        }
+        .name_5{
+            font-family: 'digital';
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size:2em;   
+        }
+        .name_6{
+            font-family: 'digital';
+            width: -webkit-fill-available;
+            text-align: -webkit-center;
+            font-size:3em;   
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex">
+
+
+            <div class="leftpane">
+                <div class="name">
+                    HOME
+                </div>
+                <div class="scores" id="home_scores">
+                    00
+                </div>
+                <div class="name_2">
+                    FOULS
+                </div>
+                <div class="name_3" id="home_fouls">
+                    0
+                </div>
+                <div class="name_2">
+                    TIMEOUTS
+                </div>
+                <div class="name_3" id="home_time_out">
+                    0
+                </div>
+
+            </div>
+
+
+
+            <div class="middlepane centered">
+                <div class="name_2">
+                    PERIOD RUNNING
+                </div>
+
+                <div class="timer">
+               19:20
+                </div>
+                <div class="name_4">
+                   17
+                </div>
+                <br>
+                <br>
+                <div class="name_5">
+                   PERIOD
+                 </div>
+
+                 <div class="name_6" id="period">
+                    1
+                  </div>
+
+            </div>
+
+
+
+
+            <div class="rightpane">
+                <div class="name">
+                    AWAY
+                </div>
+                <div class="scores">
+                    00
+                </div>
+                <div class="name_2">
+                    FOULS
+                </div>
+                <div class="name_3">
+                    0
+                </div>
+                <div class="name_2">
+                    TIMEOUTS
+                </div>
+                <div class="name_3">
+                    0
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>

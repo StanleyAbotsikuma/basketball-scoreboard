@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="toppane">
+
+        </div>
+        <div class="d-flex">
+
+
+
+            <div class="leftpane">
+                <div class="title1">
+                    HOME
+                </div>
+                <div class="title2">
+                    Scores
+                </div>
+                <div class="scores" id="home_scores">
+                    00
+                </div>
+                <div class="other_number">
+                    <button onclick="add3Points('home')"> +3 </button> <button onclick="add2Points('home')"> +2 </button> <button onclick="add1Points('home')"> +1 </button> <button  onclick="undoPoints('home')"> Undo </button>
+                </div>
+                <div class="title2">
+                    FOULS
+                </div>
+                <div class="other_number">
+                    <button onclick="addFouls('home')"> + </button>
+                    <div style="width: -webkit-fill-available;
+                 text-align: -webkit-center;" id="home_fouls">0</div> <button onclick="reduceFouls('home')"> - </button>
+                </div>
+                <div class="title2">
+                    TIMEOUTS
+                </div>
+                <div class="other_number">
+                    <button onclick="addTimeOuts('home')"> + </button>
+                    <div style="width: -webkit-fill-available;
+                    text-align: -webkit-center;" id="home_time_out">0</div> <button onclick="reduceTimeOuts('home')"> - </button>
+                </div>
+
+            </div>
+
+
+
+            <div class="middlepane centered">
+                <div class="title2" style="    background-color: #fecf00;
+                padding: 10px;
+                color: rgb(255, 255, 255);">
+
+                    TIMER
+                </div>
+                <br>
+                <br>
+                <div class="timer">
+                    <span id="mins">00</span> <span style="color: rgb(40, 39, 39);">:</span><span id="seconds">00</span>
+                </div>
+                <div style="display: flex;width:fit-content;margin: auto;height: 50px;">
+                    <input type="number" id="input_mins"><span style="color: rgb(40, 39, 39);font-size: 2.5em;">:</span> <input
+                        type="number" id="input_secs">
+                </div>
+                <br>
+                <div class="other_number">
+                    <button onclick="timerSet()"> Start Timer </button> <button onclick="timerPause()"> Pause Timer</button> <button onclick="timerResume()"> Resume Timer </button>
+                    <button onclick=" timerReset()"> Reset Timer </button>
+                </div>
+                <div class="title2">
+                    PERIOD
+                </div>
+
+                <div class="other_number">
+                    <button onclick="addPeriods()"> + </button>
+                    <div style="width: -webkit-fill-available;
+                    text-align: -webkit-center;" id="period">0</div> <button onclick="reducePeriods()"> - </button>
+                </div>
+
+
+                <div class="other_number">
+                    <button onclick="resetScores()"> Reset Scores </button> <button onclick="resetPeriod()"> Reset
+                        Period</button> <button onclick="resetFouls()"> Reset Fouls </button> <button
+                        onclick="resetAll()"> Reset All </button>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="rightpane">
+                <div class="title1">
+                    AWAY
+                </div>
+                <div class="title2">
+                    Scores
+                </div>
+                <div class="scores" id="away_scores">
+                    00
+                </div>
+                <div class="other_number">
+                    <button onclick="add3Points('away')"> +3 </button> <button onclick="add2Points('away')"> +2 </button> <button onclick="add1Points('away')"> +1 </button> <button  onclick="undoPoints('away')"> Undo </button>
+                </div>
+                <div class="title2">
+                    FOULS
+                </div>
+                <div class="other_number">
+                    <button onclick="addFouls('away')"> + </button>
+                    <div style="width: -webkit-fill-available;
+                 text-align: -webkit-center;" id="away_fouls">0</div> <button onclick="reduceFouls('away')"> - </button>
+                </div>
+                <div class="title2">
+                    TIMEOUTS
+                </div>
+                <div class="other_number">
+                    <button onclick="addTimeOuts('away')"> + </button>
+                    <div style="width: -webkit-fill-available;
+                    text-align: -webkit-center;" id="away_time_out">0</div> <button onclick="reduceTimeOuts('away')"> - </button>
+                </div>           
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+<script src="reconnecting-websocket.js"></script>
+<script language="javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.toppane {
+  width: 100%;
+  height: 100px;
+  /* background-color: #4da6ff; */
+}
+
+.leftpane {
+  width: 30%;
+  height: 100vh;
+  /* background-color: rosybrown; */
+}
+
+.middlepane {
+  width: 40%;
+  height: 100vh;
+  /* background-color: royalblue; */
+}
+
+.rightpane {
+  width: 30%;
+  height: 100vh;
+  /* background-color: yellow; */
+}
+
+.rightpane,
+.middlepane,
+.leftpane {
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  background-color: black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+@font-face {
+  font-family: 'digital';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Digital'), url(../fonts/digital-7.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'digital2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Digital2'), url(../fonts/digital-2.ttf) format('truetype');
+}
+
+
+.scores {
+  font-family: 'digital';
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 15em;
+  text-shadow: -1px 0 white, 0 5px white, 5px 0 white, 0 -1px white;
+  color: #4390db;
+}
+
+.name {
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 6em;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.name_2 {
+  font-family: 'digital';
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 2.5em;
+  color: white;
+}
+
+.name_3 {
+  font-family: 'digital';
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 6em;
+  color: #cccd3d;
+}
+
+.name_4 {
+  font-family: 'digital';
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 11em;
+  color: #d77394;
+}
+
+.timer {
+
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 11.5em;
+  color: #cccd3d;
+  display: flex;
+}
+
+.name_5 {
+  font-family: 'digital';
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 2em;
+  color: white;
+}
+
+.name_6 {
+  font-family: 'digital';
+  width: -webkit-fill-available;
+  text-align: -webkit-center;
+  font-size: 8em;
+  color: #4390db;
+}

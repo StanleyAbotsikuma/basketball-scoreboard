@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex">
+
+
+
+            <div class="leftpane">
+                <div class="name">
+                    HOME
+                </div>
+                <div class="scores" id="home_scores">
+                    00
+                </div>
+                <div class="name_2">
+                    FOULS
+                </div>
+                <div class="name_3" id="home_fouls">
+                    0
+                </div>
+                <div class="name_2">
+                    TIMEOUTS
+                </div>
+                <div class="name_3" id="home_time_out">
+                    0
+                </div>
+
+            </div>
+
+
+
+            <div class="middlepane centered">
+                <div class="name_2">
+                    PERIOD RUNNING
+                </div>
+
+                <div class="timer">
+                    <span id="mins">00</span> <span style="color: white;">:</span><span id="seconds">00</span>
+                </div>
+                <div class="name_4" id="second2s">
+                    00
+                </div>
+                <br>
+                <br>
+                <div class="name_5">
+                    PERIOD
+                </div>
+
+                <div class="name_6" id="period">
+                    0
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="rightpane">
+                <div class="name">
+                    AWAY
+                </div>
+                <div class="scores" id="away_scores">
+                    00
+                </div>
+                <div class="name_2">
+                    FOULS
+                </div>
+                <div class="name_3" id="away_fouls">
+                    0
+                </div>
+                <div class="name_2">
+                    TIMEOUTS
+                </div>
+                <div class="name_3" id="away_time_out">
+                    0
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+<script src="reconnecting-websocket.js"></script>
+<script language="javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,4 @@
+C:\Users\atoag\Downloads\folder\projects\python\enviroment\ml\Scripts activate.bat
+
+
+cd C:\Users\atoag\Downloads\folder\projects\MrAhmed\basketball\projects\backend
